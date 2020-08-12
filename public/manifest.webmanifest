@@ -1,0 +1,32 @@
+{
+  "short_name": "Scrumr",
+  "name": "Scrumr: Scrum points allocator ",
+  "description": "Scrumr: Scrum points allocator of HoyTrabajas Dev Team",
+  "icons": [
+    {
+      "src": "img/ship-64_x_64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "img/ship-128_x_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "img/ship-144_x_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "img/ship-256_x_256.png",
+      "type": "image/png",
+      "sizes": "256x264"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#0D0221",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#FF3864"
+}
