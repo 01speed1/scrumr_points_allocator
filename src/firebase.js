@@ -1,6 +1,8 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 
+// IMPORTANT: SET YOUR FIREBASE CRENDENTIALS
+
 var firebaseConfig = {
   apiKey: "",
   authDomain: "",
