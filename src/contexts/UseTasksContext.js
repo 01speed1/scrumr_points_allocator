@@ -1,12 +1,12 @@
-import React, { useReducer } from "react";
-import uuid from "uuid";
+import React, { useReducer } from 'react';
+import { v4 as uuid } from 'uuid';
 
 const emptyDeveloperBuilder = (
   { id, name, aspects, status } = {
     id: uuid(),
-    name: "",
+    name: '',
     aspects: [],
-    status: "waiting"
+    status: 'waiting'
   }
 ) => {
   return { id, name, aspects, status };
@@ -16,31 +16,31 @@ let TaskReducer = (tasksState, { action, payload }) => {
   let actionResult = [];
 
   switch (action) {
-    case "GET_SYNC_TASK":
+    case 'GET_SYNC_TASK':
       actionResult = payload;
       break;
 
-    case "ADD_EMPTY_TASK":
+    case 'ADD_EMPTY_TASK':
       actionResult = addEmptyTask(tasksState);
       break;
 
-    case "ADD_NEW_TASK":
+    case 'ADD_NEW_TASK':
       actionResult = addNewTask(tasksState, payload);
       break;
 
-    case "UPDATE_TASK":
+    case 'UPDATE_TASK':
       actionResult = updateTask(tasksState, payload);
       break;
 
-    case "REMOVE_TASK":
+    case 'REMOVE_TASK':
       actionResult = removeTask(tasksState, payload);
       break;
 
-    case "UPDATE_DEVELOPER":
+    case 'UPDATE_DEVELOPER':
       actionResult = updateDeveloper(tasksState, payload);
       break;
 
-    case "UPDATE_DEVELOPER_ASPECT":
+    case 'UPDATE_DEVELOPER_ASPECT':
       actionResult = updateAspects(tasksState, payload);
       break;
 
@@ -52,13 +52,13 @@ let TaskReducer = (tasksState, { action, payload }) => {
 
 // Task Actions
 const addNewTask = (tasksState, { taskDescription }) => {
-  const newTask = { ...emptyTaskBuilder(), description: taskDescription };
+  const newTask = { description: taskDescription };
 
   return [...tasksState, newTask];
 };
 
 const addEmptyTask = tasksState => {
-  return [...tasksState, emptyTaskBuilder()];
+  return [...tasksState];
 };
 
 const updateTask = (tasksState, { updatedTask }) => {

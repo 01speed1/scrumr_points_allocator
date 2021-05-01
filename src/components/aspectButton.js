@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "../../public/css/index.scss";
+import React, { useState } from 'react';
+import '../css/index.scss';
 // import { removeAspect, addAspect } from "../services/useAsyncAspects";
 import {
   updateDeveloper,
   useGetADeveloper
-} from "../services/useAsyncDevelopers";
+} from '../services/useAsyncDevelopers';
 
 const AspectButton = ({
   aspectData,
@@ -59,8 +59,9 @@ const AspectButton = ({
   return (
     <button
       onClick={handleOnClick}
-      className={`nes-btn ${selected && "is-success"} ${loading &&
-        "is-warning"} --fill-parent`}
+      className={`nes-btn ${selected && 'is-success'} ${
+        loading && 'is-warning'
+      } --fill-parent`}
     >
       {aspect}
     </button>
