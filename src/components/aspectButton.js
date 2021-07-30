@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/index.scss';
+import '../css/index.css';
 // import { removeAspect, addAspect } from "../services/useAsyncAspects";
 import {
   updateDeveloper,
