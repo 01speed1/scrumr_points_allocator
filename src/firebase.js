@@ -1,15 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import firebaseConfig from './firebaseConfig.json';
 
-var firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: ''
-};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 

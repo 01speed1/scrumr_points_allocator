@@ -6,7 +6,6 @@
   "main": "src/index.js",
   "dependencies": {
     "firebase": "^8.4.3",
-    "node-sass": "^4.0.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-firebase-hooks": "2.1.1",
