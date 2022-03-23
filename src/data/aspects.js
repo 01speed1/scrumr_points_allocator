@@ -1,4 +1,14 @@
 export default {
+  Dataestudio: [
+    {
+      aspect: "Esta implementacion requiere modificar una consulta de datastudio",
+      points: 2
+    },
+    {
+      aspect: "Esta implementacion requiere crear una consulta de datastudio",
+      points: 2
+    }
+  ],
   thirdPartyAspects: [
     {
       aspect: "La implementación requiere la creación de un feature flag",
